@@ -1,3 +1,6 @@
+//MODO ESTRICTO
+'use strict'
+
 //VARIABLES: Contenedor de información
 var pais = "España";
 var continente = "Europa";
