@@ -13,3 +13,6 @@ var verdad_falso = true;
 var numerofalso = "22";
 
 console.log(parseInt(numerofalso));
+
+//TYPEOF: Devuelve el tipo de dato exacto de la variable
+console.log(typeof numerofalso);
