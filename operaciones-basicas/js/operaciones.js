@@ -2,7 +2,7 @@
 
 var num1 = parseInt (prompt("Ingresa el primer numero"));
 var num2 = parseInt (prompt("Ingresa el segundo numero"));
-var op = parseInt (prompt("¿Que operacion desea realizar? \n1.Suma \n2.Resta \n3.Multiplicación \n4.División"));
+var op = parseInt (prompt("¿Que operacion desea realizar con los numeros que ingreso? \n1.Suma \n2.Resta \n3.Multiplicación \n4.División"));
 
 switch(op){
     case 1:
@@ -17,11 +17,20 @@ switch(op){
         var mul = num1 * num2;
         alert("El resultado de la MULTIPLICACION es: "+mul);
     break;
-    case 2:
-        var div = num1 / num2;
-        alert("El resultado de la DIVISION es: "+div);
+    case 4:
+        if(num2 == 0){
+            alert("No puedes DIVIDIR entre cero");
+        }else{
+            var div = num1 / num2;
+            alert("El resultado de la DIVISION es: "+div);
+        }
+    break;
+    case 5:
+        if(op==0 || op>4){
+            alert("Error, selecciona una opción valida");
+        }
     break;
     default:
-        alert("Operación invalida, selecciona una opción valida");
+        alert("Error, opción INVALIDA");
     break;
 }
