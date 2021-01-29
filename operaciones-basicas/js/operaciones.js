@@ -25,11 +25,6 @@ switch(op){
             alert("El resultado de la DIVISION es: "+div);
         }
     break;
-    case 5:
-        if(op==0 || op>4){
-            alert("Error, selecciona una opción valida");
-        }
-    break;
     default:
         alert("Error, opción INVALIDA");
     break;
