@@ -9,7 +9,7 @@ var contador = 0;
 do{
     var numero = parseInt (prompt("Introduce numeros hasta que ingreses un negativo", 0));
 
-    if(isNaN(numero)){
+    if(isNaN(numero)){ //Si no es un numero
         numero = 0
     }else if(numero >= 0){
         suma = suma + numero;
